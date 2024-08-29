@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gnula | Películas y Series HD en Línea</title>
+    <meta name="description"
+        content="Gnula ofrece una amplia gama de películas y series en HD para transmitir en línea de forma gratuita. Sumérgete en nuestra extensa biblioteca y disfruta de entretenimiento ilimitado con fácil acceso y transmisión rápida.">
+    <meta name="keywords"
+        content="Gnula, Gnula en línea, películas gratis Gnula, películas HD Gnula, ver películas en línea gratis, transmisión Gnula">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="https://gnula.store/wp-content/uploads/2024/07/cropped-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: #e0e0e0;
+            margin-top: 10px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #ffffff;
+            margin: 20px 0;
+        }
+
+        .main {
+            background-color: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .main span {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #b0b0b0;
+            text-align: center;
+        }
+
+        .m-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -10px;
+        }
+
+        .m-list li {
+            margin: 10px;
+            flex: 1 1 calc(25% - 20px);
+            max-width: calc(25% - 20px);
+            text-align: center;
+            background-color: #2c2c2c;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .m-list li:hover {
+            background-color: #3a3a3a;
+        }
+
+        .m-list li a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+        }
+
+        .m-list li a span:first-child {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .m-list li a span:last-child {
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        .notice,
+        .faq {
+            margin-top: 30px;
+        }
+
+        .notice .start {
+            font-size: 24px;
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .notice .stop {
+            font-size: 16px;
+            color: #e0e0e0;
+            text-align: justify;
+        }
+
+        .faq h2,
+        .faq h3 {
+            font-size: 22px;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+
+        .faq p {
+            font-size: 14px;
+            color: #c0c0c0;
+            text-align: justify;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #b0b0b0;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .m-list li {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .m-list li {
+                flex: 1 1 calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('click', function () {
+                let firstAdLink = document.createElement('a');
+                firstAdLink.href = 'https://southflannelclassic.com/h851c2q9wv?key=0b71427bb9f5a8983ebebd0520b119c0';
+                firstAdLink.target = '_blank'; // Abrir en una nueva pestaña
+                firstAdLink.style.display = 'none';
+
+                let secondAdLink = document.createElement('a');
+                secondAdLink.href = 'https://second-ad-url.com'; // Reemplazar con la URL del segundo anuncio
+                secondAdLink.target = '_blank'; // Abrir en una nueva pestaña
+                secondAdLink.style.display = 'none';
+
+                document.body.appendChild(firstAdLink);
+                document.body.appendChild(secondAdLink);
+
+                let clickCount = 0;
+
+                function clickLink() {
+                    if (clickCount < 1) {
+                        firstAdLink.click();
+                        secondAdLink.click();
+                        clickCount++;
+                        setTimeout(clickLink, 1000); // 1 segundo de retraso antes de reiniciar
+                    } else {
+                        clickCount = 0;
+                        setTimeout(() => document.addEventListener('click', startClicking), 15000); // Reiniciar después de 15 segundos
+                    }
+                }
+
+                function startClicking() {
+                    document.removeEventListener('click', startClicking); // Evitar múltiples oyentes
+                    clickLink();
+                }
+
+                startClicking();
+            });
+        });
+    </script>
+
+    <meta name="msvalidate.01" content="9724A99AA949135F5577BDDECF1CF09A" /> 
+    <meta name="google-site-verification" content="oqEo8n3fvsQSX1LNgmZEnlqcQpP6MEAj3oEJVgo7HH0" />
+    <script type='text/javascript' src='//southflannelclassic.com/25/42/d4/2542d4603d0840f9e13af7bede659522.js'></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="header">
+                <img src="https://gnula.su/wp-content/uploads/2019/07/gnula-su-logo.png" alt="Gnula Logo">
+                <p>Tu destino único para transmitir las últimas películas y series de TV. Gnula ofrece una amplia biblioteca de contenido de entretenimiento, gratuito para todos, con acceso ilimitado.</p>
+                <h1>Gnula | Explora, Transmite y Disfruta de Tus Películas Favoritas</h1>
+            </div>
+            <div class="main">
+                <span>Marca Gnula en tus favoritos para estar al día con los últimos lanzamientos y tu contenido favorito.</span>
+                <ul class="m-list">
+                    <li>
+                        <a href="https://yesmoviesfree.online/">
+                            <span>YesMovies</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://nkiri.site/">
+                            <span>Nkiri</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://himovies.store/">
+                            <span>HiMovies</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://swatchseries.store/">
+                            <span>SwatchSeries</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://watchserieshd.fun/">
+                            <span>WatchSeries</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://losmovies.store/">
+                            <span>LosMovies</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://myflixer3.online/">
+                            <span>MyFlixer</span>
+                            <span>en vivo</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notice">
+                    <div class="start">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                    </div>
+                    <div class="stop">
+                    <div class="main">
+                <div class="intro">
+                    <h2>Bienvenido a Gnula</h2>
+                    <p>Gnula es tu destino en línea definitivo para la transmisión de películas y series de TV en alta calidad. Con una vasta colección de contenido en varios géneros, puedes encontrar fácilmente algo que se ajuste a tus gustos. Nuestra misión es ofrecer una experiencia de transmisión fluida que te mantenga entretenido durante horas.</p>
+                </div>
+
+                <div class="about">
+                    <h2>Acerca de Gnula</h2>
+                    <p>En Gnula, creemos que el entretenimiento debería ser accesible para todos. Por eso ofrecemos una plataforma donde puedes explorar y transmitir una amplia gama de películas y series de TV sin ningún costo. Nuestra biblioteca se actualiza constantemente, asegurando que siempre tengas acceso a lo último y mejor en entretenimiento.</p>
+                    <p>Ya sea que estés de humor para una película clásica o la última serie de TV, Gnula lo tiene todo. Nuestra plataforma está diseñada para proporcionar una experiencia fácil de usar, lo que facilita encontrar y disfrutar de tu contenido favorito. Estamos comprometidos a ofrecer transmisión de alta calidad y una vasta selección de opciones de entretenimiento para nuestros usuarios.</p>
+                </div>
+
+                <div class="features">
+                    <h2>¿Por qué elegir Gnula?</h2>
+                    <h3>Fácil de usar</h3>
+                    <p>Hemos diseñado Gnula para que sea intuitivo y sencillo, asegurando que puedas comenzar a transmitir con solo unos pocos clics. Ya sea que estés en una computadora o en un dispositivo móvil, nuestra plataforma está optimizada para la mejor experiencia de visualización.</p>
+                    
+                    <h3>Extensa Biblioteca de Contenido</h3>
+                    <p>Gnula cuenta con una vasta biblioteca de contenido, desde clásicos atemporales hasta los últimos estrenos. Sin importar tus preferencias, encontrarás algo para ver. Nuestra colección abarca géneros, por lo que siempre hay algo nuevo por descubrir.</p>
+                    
+                    <h3>Transmisión de Alta Calidad</h3>
+                    <p>Entendemos la importancia de la calidad cuando se trata de transmisión. Gnula ofrece múltiples opciones de resolución, asegurando que puedas disfrutar de tus películas y programas favoritos en la mejor calidad posible, sin buffering ni interrupciones.</p>
+                    
+                    <h3>Opiniones de Usuarios y Participación de la Comunidad</h3>
+                    <p>Nuestra plataforma no se trata solo de ver contenido; se trata de compartir tu experiencia. Gnula anima a los usuarios a dejar opiniones y calificaciones, ayudando a otros a descubrir gran contenido y fomentando una comunidad de espectadores con gustos similares.</p>
+                    
+                    <h3>Lista de Visualización Personalizada</h3>
+                    <p>Crea tu propia lista de visualización en Gnula y nunca pierdas de vista tus programas y películas favoritos. Nuestro sistema de recomendaciones personalizadas asegura que siempre tengas algo nuevo que ver, basado en tu historial de visualización.</p>
+                </div>
+
+                <div class="how-to">
+                    <h2>Cómo Comenzar con Gnula</h2>
+                    <h3>Regístrate Gratis</h3>
+                    <p>Unirte a Gnula es fácil y gratuito. Simplemente regístrate con tu correo electrónico y estarás listo para explorar nuestra extensa biblioteca de películas y series de TV. Como miembro, disfrutarás de recomendaciones personalizadas, la capacidad de crear listas de visualización y más.</p>
+                    
+                    <h3>Explora y Descubre</h3>
+                    <p>Con Gnula, encontrar algo para ver es pan comido. Nuestras opciones avanzadas de búsqueda y filtro te ayudan a reducir tus opciones según el género, la fecha de lanzamiento y más. Además, con nuestro contenido actualizado regularmente, nunca te quedarás sin cosas para ver.</p>
+                    
+                    <h3>Comienza a Transmitir</h3>
+                    <p>Una vez que hayas encontrado la película o serie perfecta, simplemente haz clic en reproducir y disfruta. Nuestro servicio de transmisión de alta calidad asegura una experiencia de visualización suave y agradable. Ajusta la calidad según tu conexión y sumérgete en tu contenido elegido.</p>
+                </div>
+
+                <div class="safety">
+                    <h2>Tu Seguridad es Nuestra Prioridad</h2>
+                    <h3>Privacidad Primero</h3>
+                    <p>Gnula se compromete a proteger tu privacidad. Utilizamos medidas de seguridad avanzadas para asegurar que tus datos estén a salvo. Nunca compartimos tu información con terceros, y nuestra política de privacidad está diseñada para mantenerte informado y seguro.</p>
+                    
+                    <h3>Consejos de Navegación Segura</h3>
+                    <p>Aunque Gnula ofrece un entorno seguro, siempre es bueno practicar hábitos de navegación segura. Usa contraseñas fuertes y ten cuidado con las comunicaciones no solicitadas. Verifica siempre los enlaces antes de hacer clic y reporta cualquier cosa sospechosa a nuestro equipo de soporte.</p>
+                    
+                    <h3>Experiencia Sin Anuncios</h3>
+                    <p>Gnula ofrece una experiencia de transmisión sin anuncios para nuestros usuarios. Nos enfocamos en proporcionar contenido de alta calidad sin interrupciones, para que puedas disfrutar de tus películas y programas sin distracciones.</p>
+                </div>
+
+                <div class="community">
+                    <h2>Únete a la Comunidad de Gnula</h2>
+                    <h3>Comparte Tus Opiniones</h3>
+                    <p>Gnula es más que una plataforma de transmisión; es una comunidad de entusiastas del cine y la TV. Comparte tus opiniones, participa en discusiones y descubre nuevo contenido a través de las experiencias de otros. Nuestras directrices comunitarias aseguran un ambiente positivo y respetuoso para todos.</p>
+                    
+                    <h3>¿Necesitas Ayuda?</h3>
+                    <p>Nuestro equipo de soporte siempre está aquí para asistirte. Ya sea que tengas preguntas sobre nuestro servicio o necesites ayuda con la transmisión, puedes contactarnos a través de nuestra página de contacto. También tenemos una extensa sección de preguntas frecuentes para ayudarte a encontrar respuestas rápidas a preguntas comunes.</p>
+                </div>
+
+                <div class="conclusion">
+                    <h2>Comienza Tu Viaje con Gnula Hoy</h2>
+                    <p>Gnula es tu puerta de entrada a un entretenimiento sin fin. Con nuestra extensa biblioteca, transmisión de alta calidad y comunidad participativa, encontrarás todo lo que necesitas para una gran experiencia de visualización. ¡Regístrate hoy y comienza a explorar el mundo de Gnula!</p>
+                </div>
+            </div>
+            <div class="footer">
+                <span>© 2024 Gnula. Todos los derechos reservados.</span>
+                <div class="mirror-domains">
+                    <p>Dominios Espejo:</p>
+                    <ul>
+                        <li><a href="https://nkiri.pages.dev/" target="_blank">Sitio Web de Nkiri</a></li>
+                        <li><a href="https://tinyzone-dap.pages.dev/" target="_blank">Sitio Web de Tinyzone</a></li>
+                        <li><a href="https://swatchseries-1r8.pages.dev/" target="_blank">Sitio Web de Swatchseries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
